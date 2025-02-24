@@ -3,16 +3,14 @@ import sys
 from PyQt6 import uic  # Импортируем uic
 from PyQt6.QtGui import QIntValidator, QPixmap
 from PyQt6.QtWidgets import QApplication, QMainWindow, QSlider
-from io import BytesIO
 import requests
-from PIL import Image
 import os
 
 
 class MyWidget(QMainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('form.ui', self)  # Загружаем дизайн
+        uic.loadUi('map.ui', self)  # Загружаем дизайн
         self.count_id = 0
         self.initUI()
 
